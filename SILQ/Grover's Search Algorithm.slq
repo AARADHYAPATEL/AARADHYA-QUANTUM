@@ -1,0 +1,30 @@
+// Grover's quantum search algorithm on three qubits
+operation GroverSearch() {
+    use Libraries.Silq;
+
+    // Allocate three qubits
+    qubit q1, q2, q3;
+
+    // Apply Hadamard gates
+    H(q1);
+    H(q2);
+    H(q3);
+
+    // Grover iterations
+    X(q1);
+    H(q3);
+    CNOT(q2, q3);
+    H(q3);
+    CNOT(q1, q2);
+    H(q2);
+    CNOT(q2, q3);
+    H(q3);
+    CNOT(q1, q2);
+    H(q2);
+    X(q1);
+
+    // Measure the result
+    Measure(q1);
+    Measure(q2);
+    Measure(q3);
+}
