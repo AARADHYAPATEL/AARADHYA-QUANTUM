@@ -1,0 +1,11 @@
+// Quantum Fourier Transform on 3 qubits
+qubit[3] q;
+
+start {
+    H(q[0]);
+    CPhase(1, q[1], q[0]);
+    H(q[1]);
+    CPhase(2, q[2], q[0]);
+    CPhase(1, q[2], q[1]);
+    H(q[2]);
+}
