@@ -1,0 +1,7 @@
+// Creating an entangled pair of qubits
+qubit[2] q;
+
+start {
+    H(q[0]);
+    CNOT(q[0], q[1]);
+}
