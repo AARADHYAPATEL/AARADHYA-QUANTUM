@@ -1,0 +1,6 @@
+// Simple quantum "Hello, World!" program
+qubit[1] q;
+
+start {
+    // Quantum code here
+}
