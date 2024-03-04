@@ -1,0 +1,9 @@
+// Superdense coding algorithm
+qubit[2] q;
+
+start {
+    H(q[0]);
+    CNOT(q[0], q[1]);
+    X(q[0]);
+    Z(q[0]);
+}
