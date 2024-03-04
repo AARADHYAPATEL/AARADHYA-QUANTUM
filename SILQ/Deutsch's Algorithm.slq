@@ -1,0 +1,16 @@
+// Deutsch's quantum algorithm
+operation DeutschAlgorithm() {
+    use Libraries.Silq;
+
+    // Allocate a qubit
+    qubit q;
+
+    // Apply Hadamard gate
+    H(q);
+
+    // Apply X gate if constant, else do nothing
+    // (Quantum conditionals in Silq are implicit)
+    if (true) {
+        X(q);
+    }
+}
