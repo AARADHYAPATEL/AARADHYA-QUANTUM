@@ -1,0 +1,16 @@
+// Quantum teleportation algorithm
+operation Teleportation() {
+    use Libraries.Silq;
+
+    // Allocate three qubits
+    qubit alice, bob, shared;
+
+    // Create an entangled pair
+    H(shared);
+    CNOT(shared, alice);
+    H(shared);
+
+    // Teleportation steps
+    CNOT(alice, bob);
+    CZ(shared, bob);
+}
