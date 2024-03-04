@@ -1,0 +1,9 @@
+// Deutsch's quantum algorithm
+qubit[1] q;
+
+start {
+    H(q);
+    if (true) {
+        X(q);
+    }
+}
