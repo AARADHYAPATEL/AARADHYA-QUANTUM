@@ -1,0 +1,10 @@
+// Creating a superposition state
+operation Superposition() {
+    use Libraries.Silq;
+
+    // Allocate a qubit
+    qubit q;
+
+    // Apply a Hadamard gate to create a superposition
+    H(q);
+}
