@@ -1,0 +1,20 @@
+// Bit flip quantum error correction
+operation BitFlipCode() {
+    use Libraries.Silq;
+
+    // Allocate three qubits for encoding
+    qubit q1, q2, q3;
+
+    // Encode a logical |0⟩ state
+    H(q1);
+    CNOT(q1, q2);
+    CNOT(q1, q3);
+
+    // Simulate a bit flip error on qubit q2
+    X(q2);
+
+    // Correct the error
+    CNOT(q1, q2);
+    CNOT(q1, q3);
+    H(q1);
+}
