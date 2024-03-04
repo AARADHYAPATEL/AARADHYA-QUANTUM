@@ -1,0 +1,9 @@
+// Quantum random number generator
+qubit[1] q;
+
+start {
+    H(q);
+    let random_bit = Measure(q);
+    // Output random bit
+    print(random_bit);
+}
