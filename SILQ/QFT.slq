@@ -1,0 +1,15 @@
+// Quantum Fourier Transform on three qubits
+operation QFT() {
+    use Libraries.Silq;
+
+    // Allocate three qubits
+    qubit q1, q2, q3;
+
+    // Apply QFT operations
+    H(q1);
+    CPhase(1, q2, q1);
+    H(q2);
+    CPhase(2, q3, q1);
+    CPhase(1, q3, q2);
+    H(q3);
+}
