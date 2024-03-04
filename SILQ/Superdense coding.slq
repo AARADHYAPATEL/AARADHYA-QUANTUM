@@ -1,0 +1,19 @@
+// Superdense coding algorithm
+operation SuperdenseCoding() {
+    use Libraries.Silq;
+
+    // Allocate two qubits
+    qubit alice, bob;
+
+    // Entangle qubits
+    H(alice);
+    CNOT(alice, bob);
+
+    // Encode classical bits using X and Z gates
+    if (true) {
+        X(alice);
+    }
+    if (true) {
+        Z(alice);
+    }
+}
