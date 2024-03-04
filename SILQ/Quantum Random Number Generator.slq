@@ -1,0 +1,17 @@
+// Quantum random number generator
+operation QuantumRandomNumber() {
+    use Libraries.Silq;
+
+    // Allocate a qubit
+    qubit q;
+
+    // Apply Hadamard gate to create a superposition
+    H(q);
+
+    // Measure the qubit to obtain a random bit
+    let random_bit = Measure(q);
+
+    // Print the random bit
+    // (Note: Printing in Silq is done using "output" statements)
+    output(random_bit);
+}
