@@ -1,0 +1,11 @@
+// Creating an entangled pair of qubits
+operation Entanglement() {
+    use Libraries.Silq;
+
+    // Allocate two qubits
+    qubit q1, q2;
+
+    // Create an entangled pair
+    H(q1);
+    CNOT(q1, q2);
+}
