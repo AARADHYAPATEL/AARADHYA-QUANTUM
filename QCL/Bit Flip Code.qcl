@@ -1,0 +1,16 @@
+// Bit flip quantum error correction
+qubit[3] q;
+
+start {
+    H(q[0]);
+    CNOT(q[0], q[1]);
+    CNOT(q[0], q[2]);
+
+    // Simulate a bit flip error on qubit q[1]
+    X(q[1]);
+
+    // Correct the error
+    CNOT(q[0], q[1]);
+    CNOT(q[0], q[2]);
+    H(q[0]);
+}
