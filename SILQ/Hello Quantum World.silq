@@ -1,0 +1,4 @@
+// Simple quantum "Hello, World!" program
+operation HelloQuantum() {
+    // Quantum code here
+}
