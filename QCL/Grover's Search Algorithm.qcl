@@ -1,0 +1,17 @@
+// Grover's quantum search algorithm on 3 qubits
+qubit[3] q;
+
+start {
+    H(q);
+    X(q[2]);
+    H(q[2]);
+    CNOT(q[1], q[2]);
+    H(q[2]);
+    CNOT(q[0], q[1]);
+    H(q[1]);
+    CNOT(q[1], q[2]);
+    H(q[2]);
+    CNOT(q[0], q[1]);
+    H(q[1]);
+    X(q);
+}
