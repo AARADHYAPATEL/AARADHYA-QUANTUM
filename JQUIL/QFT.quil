@@ -1,0 +1,7 @@
+H 0
+PHASE(pi/2) 0
+H 1
+CPHASE(pi/2) 0 1
+H 1
+MEASURE 0 [0]
+MEASURE 1 [1]
