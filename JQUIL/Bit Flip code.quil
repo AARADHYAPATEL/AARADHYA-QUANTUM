@@ -1,0 +1,12 @@
+H 0
+CNOT 0 1
+CNOT 0 2
+
+# Simulate a bit flip error on qubit 1
+X 1
+
+# Correct the error
+CNOT 0 1
+CNOT 0 2
+H 0
+MEASURE 0 [0]
